@@ -11,7 +11,7 @@ Thuộc hệ sinh thái **HRM Enterprise**, kết nối trực tiếp với Core
 - **Framework:** Flutter 3.x (Dart 3.x)
 - **Thiết kế UI/UX:** Chuẩn Material 3, Font chữ `Public Sans`, Màu thương hiệu chủ đạo `#8E1B2F` (Burgundy Red)
 - **Kiến trúc:** Feature-first Architecture, Repository Pattern, State Management
-- **Hỗ trợ đa nền tảng:** Android, iOS, Web, Windows
+- **Nền tảng:** iOS (Flutter)
 
 ---
 
@@ -60,7 +60,6 @@ mobile/
     │           ├── regulations/        # Quy chế & chính sách công ty
     │           ├── notifications/      # Thông báo hệ thống
     │           └── profile/            # Thông tin cá nhân, đổi mật khẩu, thiết bị
-    ├── android/                        # Cấu hình native Android
     ├── ios/                            # Cấu hình native iOS
     ├── pubspec.yaml                    # Khai báo thư viện phụ thuộc & assets
     └── test/                           # Unit & Widget tests
@@ -73,7 +72,7 @@ mobile/
 ### Yêu cầu tiên quyết
 - **Flutter SDK** >= 3.22.x
 - **Dart SDK** >= 3.4.x
-- **Android Studio** (Android SDK) / **Xcode** (dành cho macOS/iOS)
+- **Xcode** (dành cho macOS/iOS)
 - **API Gateway backend** đang chạy tại port `4000`
 
 ### Các bước khởi chạy
@@ -96,9 +95,8 @@ flutter run
 
 Chỉnh sửa địa chỉ máy chủ trong file cấu hình mạng `lib/src/core/network/api_client.dart`:
 
-- **Android Emulator (Máy ảo Android Studio):** `http://10.0.2.2:4000`
-- **iOS Simulator / macOS:** `http://localhost:4000`
-- **Thiết bị thật (Cùng mạng LAN Wi-Fi với máy tính):** `http://<IP_MÁY_TÍNH>:4000`
+- **iOS Simulator:** `http://localhost:4000`
+- **Thiết bị iOS thật (Cùng mạng LAN Wi-Fi với máy tính):** `http://<IP_MÁY_TÍNH>:4000`
 
 ---
 
